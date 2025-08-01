@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <script src="../src/js/randomkep.js"></script>
+    <script src="../src/js/scrollanimation.js"></script>
+    <script src="../src/js/bootstrap.min.js"></script>
+
+    <script src="jasmine-2.3.4/jasmine.js" type="text/javascript"></script>
+        <script src="jasmine-2.3.4/jasmine-html.js" type="text/javascript"></script>
+        <script src="jasmine-2.3.4/boot.js" type="text/javascript"></script>
+
+        <script src="./test-service.js" type="text/javascript"></script>
+
+        <link href="jasmine-2.3.4/jasmine.css" rel="stylesheet" type="text/css">
+    <title>HbszTabula</title>
+</head>
+<body>
+    <div id="monitor">
+    <nav class="navbar navbar-expand-sm navbar-light" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#elsoresz">HBSZTABULA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./src/html/nezegeto.html">Tablónézegető</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#masodikresz">Leírás</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="elsoresz">
+        <video id="background-video" autoplay loop muted>
+            <source src="./src/video/kezdovid.mp4" type="video/mp4">
+        </video>
+      <div class="container" id="fade">
+        <div class="row">
+            <div class="col-sm-12" id="logoanimated">
+                <p>HbszTabula</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <img id="kepforgat1" class="img-fluid" src="../src/kepek/randomkepek/tablo2.jpg" alt="Chania" width="220" height="105"> 
+            </div>
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-3"> 
+            </div>
+            <div class="col-sm-3">
+                <img id="kepforgat2" class="img-fluid" src="../src/kepek/randomkepek/tablo1.jpg" alt="Chania" width="220" height="105"> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <img id="kepforgat3" class="img-fluid" src="../src/kepek/randomkepek/tablo3.jpg" alt="Chania" width="220" height="105"> 
+            </div>
+            <div class="col-sm-2">
+                <img id="kepforgat4" class="img-fluid" src="../src/kepek/randomkepek/tablo4.jpg" alt="Chania" width="220" height="105"> 
+            </div>
+            <div class="col-sm-2">
+                <img id="kepforgat5" class="img-fluid" src="../src/kepek/randomkepek/tablo5.jpg" alt="Chania" width="220" height="105"> 
+            </div>
+            <div class="col-sm-2">
+                <img id="kepforgat6" class="img-fluid" src="../src/kepek/randomkepek/tablo6.jpg" alt="Chania" width="220" height="105"> 
+            </div>
+            <div class="col-sm-2">
+                <img id="kepforgat7" class="img-fluid" src="../src/kepek/randomkepek/tablo7.jpg" alt="Chania" width="220" height="105"> 
+            </div>
+            <div class="col-sm-2">
+                <img id="kepforgat8" class="img-fluid" src="../src/kepek/randomkepek/tablo8.jpg" alt="Chania" width="220" height="105"> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <img id="kepforgat9" class="img-fluid" src="../src/kepek/randomkepek/tablo9.jpg" alt="Chania" width="220" height="105"> 
+            </div>
+            <div class="col-sm-3">
+                <img id="kepforgat10" class="img-fluid" src="../src/kepek/randomkepek/tablo10.jpg" alt="Chania" width="220" height="105"> 
+            </div>
+            <div class="col-sm-3">
+                <img id="kepforgat11" class="img-fluid" src="../src/kepek/randomkepek/tablo11.jpg" alt="Chania" width="220" height="105"> 
+            </div>
+            <div class="col-sm-3">
+                <img id="kepforgat12" class="img-fluid" src="../src/kepek/randomkepek/tablo12.jpg" alt="Chania" width="220" height="105"> 
+            </div>
+        </div>
+      </div>
+    </section>
+    <section id="masodikresz">
+        <div class="container reveal">
+            <div class="row">
+               <div class="col-sm-12">
+                    <center><h1>A tabló-nézegetőről</h1></center>
+                </div>
+            </div>
+            <div id="cardresz" class="row">
+                <div class="col-sm-4">
+                    <div id="doboz">
+                        <div>
+                            <h3>A CÉLOK</h3>
+                            <p>
+                                Az elmúlt évek során többször beszélgettem az iskolába érkező Öreg Diákokkal, akik nagyon sok
+                                történetet meséltek az Iskola múltjáról. Ezen beszélgetések során alakult ki bennem az a gondolat,
+                                hogy létre kellene hozni egy digitális archívumot, amellyel meg lehetne őrizni az Iskola történelmének fontos
+                                emlékeit. Fontos célunk az is, hogy minél többen megismerhessék az Iskola 125 éves múltját.
+                                
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div id="doboz">
+                        <div>
+                            <h3>A HBSZ TABULA</h3>
+                            <p >A Digitális Archívum első önálló életet élő része a <br>
+                                tabló-nézegető <br>
+                                Ez a honlap lehetőseg ad az iskola tablóinak digitális archiválására és ezen archívumban történő
+                                keresgélésekre.<br>Full HD minőségben nézheted vissza a régi osztályokat és tanárokat, diákokat.
+                                <br>Bárki bárhonnan elérheti belépés nélkül! <br>Szűrési lehetőségek:<br> Évszámra, 
+                                osztályra vagy a diák nevére. <br>
+                                Vagy ezeket kombinálva.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div id="doboz">
+                        <div>
+                            <h3>KÖSZÖNET</h3>
+                            <p>
+                                A HBSZ TABULA alkotói :<br>Hevesi Ferenc<br>Németh Szabolcs<br>Takács Máté Attila<br>
+                                ez úton szeretne köszönetet mondani a Vas Megyei SZC Horváth Boldizsár Közgazdasági és Informatikai Technikum
+                                minden munkatársának a sok segítségért, amit a projekt létrehozásához kaptunk.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="harmadikresz">
+        
+    </section>
+</div>
+</body>
+</html>
