@@ -1,0 +1,269 @@
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\admin.exe.config
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\admin.exe
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\admin.pdb
+C:\Users\nemet\Desktop\projekt\admin\admin\obj\Debug\admin.csproj.AssemblyReference.cache
+C:\Users\nemet\Desktop\projekt\admin\admin\obj\Debug\admin.csproj.SuggestedBindingRedirects.cache
+C:\Users\nemet\Desktop\projekt\admin\admin\obj\Debug\MainWindow.g.cs
+C:\Users\nemet\Desktop\projekt\admin\admin\obj\Debug\App.g.cs
+C:\Users\nemet\Desktop\projekt\admin\admin\obj\Debug\admin_MarkupCompile.cache
+C:\Users\nemet\Desktop\projekt\admin\admin\obj\Debug\admin_MarkupCompile.lref
+C:\Users\nemet\Desktop\projekt\admin\admin\obj\Debug\MainWindow.baml
+C:\Users\nemet\Desktop\projekt\admin\admin\obj\Debug\admin.g.resources
+C:\Users\nemet\Desktop\projekt\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\nemet\Desktop\projekt\admin\admin\obj\Debug\admin.csproj.GenerateResource.cache
+C:\Users\nemet\Desktop\projekt\admin\admin\obj\Debug\admin.csproj.CoreCompileInputs.cache
+C:\Users\nemet\Desktop\projekt\admin\admin\obj\Debug\admin.exe
+C:\Users\nemet\Desktop\projekt\admin\admin\obj\Debug\admin.pdb
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\Google.Protobuf.dll
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\MySql.Data.dll
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\System.Buffers.dll
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\System.Memory.dll
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\ZstdNet.dll
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\Google.Protobuf.pdb
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\Google.Protobuf.xml
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\MySql.Data.xml
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\System.Buffers.xml
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\System.Memory.xml
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\nemet\Desktop\projekt\admin\admin\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\nemet\Desktop\projekt\admin\admin\obj\Debug\admin.csproj.CopyComplete
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\admin.exe.config
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\admin.exe
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\admin.pdb
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\Google.Protobuf.dll
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\MySql.Data.dll
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\System.Buffers.dll
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\System.Memory.dll
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\ZstdNet.dll
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\Google.Protobuf.pdb
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\Google.Protobuf.xml
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\MySql.Data.xml
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\System.Buffers.xml
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\System.Memory.xml
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\nemeths\projekt\admin\admin\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\nemeths\projekt\admin\admin\obj\Debug\admin.csproj.AssemblyReference.cache
+C:\Users\nemeths\projekt\admin\admin\obj\Debug\admin.csproj.SuggestedBindingRedirects.cache
+C:\Users\nemeths\projekt\admin\admin\obj\Debug\MainWindow.g.cs
+C:\Users\nemeths\projekt\admin\admin\obj\Debug\App.g.cs
+C:\Users\nemeths\projekt\admin\admin\obj\Debug\admin_MarkupCompile.cache
+C:\Users\nemeths\projekt\admin\admin\obj\Debug\admin_MarkupCompile.lref
+C:\Users\nemeths\projekt\admin\admin\obj\Debug\MainWindow.baml
+C:\Users\nemeths\projekt\admin\admin\obj\Debug\admin.g.resources
+C:\Users\nemeths\projekt\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\nemeths\projekt\admin\admin\obj\Debug\admin.csproj.GenerateResource.cache
+C:\Users\nemeths\projekt\admin\admin\obj\Debug\admin.csproj.CoreCompileInputs.cache
+C:\Users\nemeths\projekt\admin\admin\obj\Debug\admin.csproj.CopyComplete
+C:\Users\nemeths\projekt\admin\admin\obj\Debug\admin.exe
+C:\Users\nemeths\projekt\admin\admin\obj\Debug\admin.pdb
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\admin.exe.config
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\admin.exe
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\admin.pdb
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\Google.Protobuf.dll
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\MySql.Data.dll
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\System.Buffers.dll
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\System.Memory.dll
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\ZstdNet.dll
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\Google.Protobuf.pdb
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\Google.Protobuf.xml
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\MySql.Data.xml
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\System.Buffers.xml
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\System.Memory.xml
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\obj\Debug\admin.csproj.AssemblyReference.cache
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\obj\Debug\MainWindow.g.cs
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\obj\Debug\App.g.cs
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\obj\Debug\admin_MarkupCompile.cache
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\obj\Debug\admin_MarkupCompile.lref
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\obj\Debug\MainWindow.baml
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\obj\Debug\admin.g.resources
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\obj\Debug\admin.csproj.GenerateResource.cache
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\obj\Debug\admin.csproj.CoreCompileInputs.cache
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\obj\Debug\admin.csproj.CopyComplete
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\obj\Debug\admin.exe
+C:\Users\nsz_e2021\Desktop\angol\projekt\admin\admin\obj\Debug\admin.pdb
+F:\projekt\admin\admin\bin\Debug\admin.exe.config
+F:\projekt\admin\admin\bin\Debug\admin.exe
+F:\projekt\admin\admin\bin\Debug\admin.pdb
+F:\projekt\admin\admin\bin\Debug\BouncyCastle.Crypto.dll
+F:\projekt\admin\admin\bin\Debug\Google.Protobuf.dll
+F:\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.dll
+F:\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.Streams.dll
+F:\projekt\admin\admin\bin\Debug\K4os.Hash.xxHash.dll
+F:\projekt\admin\admin\bin\Debug\MySql.Data.dll
+F:\projekt\admin\admin\bin\Debug\System.Buffers.dll
+F:\projekt\admin\admin\bin\Debug\System.Memory.dll
+F:\projekt\admin\admin\bin\Debug\System.Numerics.Vectors.dll
+F:\projekt\admin\admin\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\projekt\admin\admin\bin\Debug\ZstdNet.dll
+F:\projekt\admin\admin\bin\Debug\BouncyCastle.Crypto.xml
+F:\projekt\admin\admin\bin\Debug\Google.Protobuf.pdb
+F:\projekt\admin\admin\bin\Debug\Google.Protobuf.xml
+F:\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.xml
+F:\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.Streams.xml
+F:\projekt\admin\admin\bin\Debug\K4os.Hash.xxHash.xml
+F:\projekt\admin\admin\bin\Debug\MySql.Data.xml
+F:\projekt\admin\admin\bin\Debug\System.Buffers.xml
+F:\projekt\admin\admin\bin\Debug\System.Memory.xml
+F:\projekt\admin\admin\bin\Debug\System.Numerics.Vectors.xml
+F:\projekt\admin\admin\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\projekt\admin\admin\obj\Debug\admin.csproj.AssemblyReference.cache
+F:\projekt\admin\admin\obj\Debug\MainWindow.g.cs
+F:\projekt\admin\admin\obj\Debug\App.g.cs
+F:\projekt\admin\admin\obj\Debug\admin_MarkupCompile.cache
+F:\projekt\admin\admin\obj\Debug\admin_MarkupCompile.lref
+F:\projekt\admin\admin\obj\Debug\MainWindow.baml
+F:\projekt\admin\admin\obj\Debug\admin.g.resources
+F:\projekt\admin\admin\obj\Debug\admin.Properties.Resources.resources
+F:\projekt\admin\admin\obj\Debug\admin.csproj.GenerateResource.cache
+F:\projekt\admin\admin\obj\Debug\admin.csproj.CoreCompileInputs.cache
+F:\projekt\admin\admin\obj\Debug\admin.csproj.CopyComplete
+F:\projekt\admin\admin\obj\Debug\admin.exe
+F:\projekt\admin\admin\obj\Debug\admin.pdb
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\admin.exe.config
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\admin.exe
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\admin.pdb
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\Google.Protobuf.dll
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\MySql.Data.dll
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\System.Buffers.dll
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\System.Memory.dll
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\ZstdNet.dll
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\Google.Protobuf.pdb
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\Google.Protobuf.xml
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\MySql.Data.xml
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\System.Buffers.xml
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\System.Memory.xml
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\obj\Debug\admin.csproj.AssemblyReference.cache
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\obj\Debug\MainWindow.g.cs
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\obj\Debug\App.g.cs
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\obj\Debug\admin_MarkupCompile.cache
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\obj\Debug\admin_MarkupCompile.lref
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\obj\Debug\MainWindow.baml
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\obj\Debug\admin.g.resources
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\obj\Debug\admin.csproj.GenerateResource.cache
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\obj\Debug\admin.csproj.CoreCompileInputs.cache
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\obj\Debug\admin.csproj.CopyComplete
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\obj\Debug\admin.exe
+C:\Users\nsz_e2021\Desktop\projekt\admin\admin\obj\Debug\admin.pdb
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\admin.exe.config
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\admin.exe
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\admin.pdb
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\Google.Protobuf.dll
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\MySql.Data.dll
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\System.Buffers.dll
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\System.Memory.dll
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\ZstdNet.dll
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\Google.Protobuf.pdb
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\Google.Protobuf.xml
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\MySql.Data.xml
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\System.Buffers.xml
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\System.Memory.xml
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\nemet\iskola\admin\admin\admin\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\nemet\iskola\admin\admin\admin\obj\Debug\admin.csproj.AssemblyReference.cache
+C:\Users\nemet\iskola\admin\admin\admin\obj\Debug\admin.csproj.SuggestedBindingRedirects.cache
+C:\Users\nemet\iskola\admin\admin\admin\obj\Debug\MainWindow.g.cs
+C:\Users\nemet\iskola\admin\admin\admin\obj\Debug\App.g.cs
+C:\Users\nemet\iskola\admin\admin\admin\obj\Debug\admin_MarkupCompile.cache
+C:\Users\nemet\iskola\admin\admin\admin\obj\Debug\admin_MarkupCompile.lref
+C:\Users\nemet\iskola\admin\admin\admin\obj\Debug\MainWindow.baml
+C:\Users\nemet\iskola\admin\admin\admin\obj\Debug\admin.g.resources
+C:\Users\nemet\iskola\admin\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\nemet\iskola\admin\admin\admin\obj\Debug\admin.csproj.GenerateResource.cache
+C:\Users\nemet\iskola\admin\admin\admin\obj\Debug\admin.csproj.CoreCompileInputs.cache
+C:\Users\nemet\iskola\admin\admin\admin\obj\Debug\admin.csproj.CopyComplete
+C:\Users\nemet\iskola\admin\admin\admin\obj\Debug\admin.exe
+C:\Users\nemet\iskola\admin\admin\admin\obj\Debug\admin.pdb
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\admin.exe.config
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\admin.exe
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\admin.pdb
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\Google.Protobuf.dll
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\MySql.Data.dll
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\System.Buffers.dll
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\System.Memory.dll
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\ZstdNet.dll
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\Google.Protobuf.pdb
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\Google.Protobuf.xml
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\MySql.Data.xml
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\System.Buffers.xml
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\System.Memory.xml
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\obj\Debug\admin.csproj.AssemblyReference.cache
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\obj\Debug\MainWindow.g.cs
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\obj\Debug\App.g.cs
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\obj\Debug\admin_MarkupCompile.cache
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\obj\Debug\admin_MarkupCompile.lref
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\obj\Debug\MainWindow.baml
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\obj\Debug\admin.g.resources
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\obj\Debug\admin.csproj.GenerateResource.cache
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\obj\Debug\admin.csproj.CoreCompileInputs.cache
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\obj\Debug\admin.csproj.CopyComplete
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\obj\Debug\admin.exe
+C:\Users\gyaps\OneDrive\Asztali gép\iskola\admin\admin\admin\obj\Debug\admin.pdb

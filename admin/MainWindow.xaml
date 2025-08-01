@@ -1,0 +1,307 @@
+﻿<Window x:Class="admin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:admin"
+        mc:Ignorable="d"
+        Title="Admin" Height="650" Width="1135" Loaded="betolt" Closing="barmikorbezar"
+        Background="#faebd7">
+    <Grid>
+        <GroupBox x:Name="bej" Header="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Width="300" Visibility="Collapsed" Background="#D3D3D3">
+            <Canvas>
+                <Label Content="Login" Canvas.Left="115" Canvas.Top="10" FontWeight="Bold" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Label Content="Username:" Canvas.Left="52" Canvas.Top="51" FontSize="11" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <TextBox x:Name="fnev" Canvas.Left="118" TextWrapping="NoWrap" Canvas.Top="55" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top" Loaded="indulas_fnevfocus" />
+                <Label Content="Password:" Canvas.Left="55" Canvas.Top="87" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="11"/>
+                <PasswordBox x:Name="jelszo" Canvas.Left="118" Canvas.Top="90" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top" KeyDown="vizsgalat"/>
+            </Canvas>
+        </GroupBox>
+        <GroupBox x:Name="gombok" HorizontalAlignment="Center" Height="200" Header="" Width="900" Visibility="Collapsed" Background="#D3D3D3">
+            <Canvas>
+                <Button x:Name="tablo" Content="Tabló" Canvas.Left="60" Canvas.Top="30" Height="50" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="18" FontWeight="Bold" Click="tablo_Click" Background="#CCFFE5" Foreground="#202020"/>
+                <Button x:Name="diak" Content="Diák" Canvas.Left="280" Canvas.Top="30" Height="50" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Click="diak_Click" Background="#CCFFE5" Foreground="#202020"/>
+                <Button x:Name="tanar" Content="Tanár" Canvas.Left="500" Canvas.Top="30" Height="50" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Click="tanar_Click" Background="#CCFFE5" Foreground="#202020"/>
+                <Button x:Name="tanarkep" Content="Tanárkép" Canvas.Left="720" Canvas.Top="30" Height="50" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Click="tanarkep_Click" Background="#CCFFE5" Foreground="#202020"/>
+                <Button x:Name="osztalyinf" Content="Osztály" Canvas.Left="220" Canvas.Top="110" Height="50" Width="120" FontSize="18" FontWeight="Bold" Click="osztalyinf_Click" Background="#CCFFE5" Foreground="#202020" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Button x:Name="helyinf" Content="Hely" Canvas.Left="560" Canvas.Top="110" Height="50" Width="120" FontSize="18" FontWeight="Bold" Click="helyinf_Click" Background="#CCFFE5" Foreground="#202020" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+            </Canvas>
+        </GroupBox>
+        <GroupBox x:Name="tabloadmin" Header="" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" Width="900" Height="440" Background="White">
+            <Canvas>
+                <ListView x:Name="tablok" Height="200" Width="855" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Top" SelectionChanged="tablok_SelectionChanged" Canvas.Left="16">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="id" Width="77" DisplayMemberBinding="{Binding id}"/>
+                            <GridViewColumn Header="kezdet" Width="40" DisplayMemberBinding="{Binding kezdet}"/>
+                            <GridViewColumn Header="veg" Width="40" DisplayMemberBinding="{Binding veg}"/>
+                            <GridViewColumn Header="osztaly" Width="40" DisplayMemberBinding="{Binding osztaly}"/>
+                            <GridViewColumn Header="helye" Width="40" DisplayMemberBinding="{Binding helye}"/>
+                            <GridViewColumn Header="keppng" Width="175" DisplayMemberBinding="{Binding keppng}"/>
+                            <GridViewColumn Header="kepjpg" Width="175" DisplayMemberBinding="{Binding kepjpg}"/>
+                            <GridViewColumn Header="eng" Width="38" DisplayMemberBinding="{Binding eng}"/>
+                            <GridViewColumn Header="van" Width="38" DisplayMemberBinding="{Binding van}"/>
+                            <GridViewColumn Header="torol" Width="38" DisplayMemberBinding="{Binding torol}"/>
+                            <GridViewColumn Header="idobelyeg" Width="125" DisplayMemberBinding="{Binding idobelyeg}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <Button x:Name="hozzaad" Content="Új" Canvas.Left="825" Canvas.Top="230" HorizontalAlignment="Left" VerticalAlignment="Center" Width="45" Height="29" Click="megnyitashoz"/>
+                <Button x:Name="torol" Content="Törlés" Canvas.Left="821" Canvas.Top="280" ToolTip="Többet is törölhetsz (Ctrl + Katt)" Height="29" Width="49" Click="torles" HorizontalAlignment="Left" VerticalAlignment="Top" IsEnabled="False"/>
+                <Button x:Name="mod" Content="Módosítás" Canvas.Left="793" Canvas.Top="330" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" IsEnabled="False" Width="77" Click="modosit"/>
+                <Button x:Name="tabid" Content="Tabid" Canvas.Left="16" Canvas.Top="230" HorizontalAlignment="Left" VerticalAlignment="Center" Width="45" Height="29" Click="tabidtarolas" IsEnabled="False"/>
+                <Button x:Name="megszuntet_t" Content="Megszüntet" ToolTip="Kijelölés megszüntetése" Canvas.Left="71" Canvas.Top="230" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80" Height="29" Click="kijlevesz" IsEnabled="False"/>
+                <GroupBox x:Name="ujtablo" Height="200" Header="" Width="270" Canvas.Top="220" Canvas.Left="161" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Collapsed">
+                    <Canvas>
+                        <Label Content="Kezdés éve: " Canvas.Left="10" ToolTip="1 - 2146" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBox x:Name="hozzakev" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="14" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center" PreviewTextInput="justnumber"/>
+                        <Label Content="Végzés éve: " Canvas.Left="10" ToolTip="0 - 9999" Canvas.Top="41" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBox x:Name="hozzavev" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="45" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" PreviewTextInput="justnumber"/>
+                        <Label Content="Osztály típusa: " Canvas.Left="10" ToolTip="0-99" Canvas.Top="72" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBox x:Name="hozzaotipus" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="76" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" PreviewTextInput="justnumber"/>
+                        <Label Content="Helye: " Canvas.Left="10" Canvas.Top="103" ToolTip="0-127" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBox x:Name="hozzahely" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="107" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" PreviewTextInput="justnumber"/>
+
+                        <Button x:Name="hozzament" Content="Hozzáad" Canvas.Left="118" Canvas.Top="135" HorizontalAlignment="Left" VerticalAlignment="Center" Click="tabloment"/>
+                        <Button x:Name="megsemadokhozza" Content="Mégsem" Canvas.Left="178" Canvas.Top="135" HorizontalAlignment="Left" VerticalAlignment="Center" Click="megsemadokhozzagomb"/>
+                    </Canvas>
+                </GroupBox>
+                <GroupBox x:Name="tablo_mod" Height="170" Header="" Width="270" Canvas.Top="220" Canvas.Left="441" Visibility="Collapsed" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Canvas>
+                        <Label Content="Van: " Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <GroupBox Height="43" Header="" Width="120" Canvas.Left="108" Canvas.Top="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Canvas Margin="0,-3,0,3">
+                                <RadioButton x:Name="vantrue" Content="True" Canvas.Left="5" Canvas.Top="3" />
+                                <RadioButton x:Name="vanfalse" Content="False" Canvas.Left="55" Canvas.Top="3" />
+                            </Canvas>
+                        </GroupBox>
+                        <Label Content="Engedély: " Canvas.Left="10" Canvas.Top="46" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <GroupBox Height="43" Header="" Width="120" Canvas.Left="108" Canvas.Top="37" HorizontalAlignment="Center" VerticalAlignment="Top">
+                            <Canvas Margin="0,-3,0,2">
+                                <RadioButton x:Name="engtrue" Content="True" Canvas.Left="5" Canvas.Top="3" />
+                                <RadioButton x:Name="engfalse" Content="False" Canvas.Left="55" Canvas.Top="3" />
+                            </Canvas>
+                        </GroupBox>
+                        <Label Content="Helye: " Canvas.Left="10" Canvas.Top="81" ToolTip="0-127" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBox x:Name="modhely" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="85" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center" PreviewTextInput="justnumber"/>
+
+                        <Button x:Name="adatmod" Content="Mentés" Canvas.Left="125" Canvas.Top="112" HorizontalAlignment="Left" VerticalAlignment="Center" Click="adatokmodositasa"/>
+                        <Button x:Name="megsemmod" Content="Mégsem" Canvas.Left="178" Canvas.Top="112" HorizontalAlignment="Left" VerticalAlignment="Center" Click="nemakarokmodositani"/>
+                    </Canvas>
+                </GroupBox>
+                
+                <Button x:Name="tablovissza" Content="Vissza" Canvas.Left="820" Canvas.Top="380" Click="tabvissza" Height="29" Width="50"/>
+            </Canvas>
+        </GroupBox>
+        <GroupBox x:Name="diakadmin" Header="" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1020" Height="630" Background="White">
+            <Canvas>
+                <ListView x:Name="diakok" Height="340" Width="980" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Top="10" Canvas.Left="10" VerticalAlignment="Center" HorizontalAlignment="Left" SelectionChanged="diakok_SelectionChanged">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="id" Width="40" DisplayMemberBinding="{Binding id}"/>
+                            <GridViewColumn Header="vnev" Width="77" DisplayMemberBinding="{Binding vnev}"/>
+                            <GridViewColumn Header="knev" Width="77" DisplayMemberBinding="{Binding knev}"/>
+                            <GridViewColumn Header="mappa" Width="160" DisplayMemberBinding="{Binding mappa}"/>
+                            <GridViewColumn Header="keppng" Width="140" DisplayMemberBinding="{Binding keppng}"/>
+                            <GridViewColumn Header="kepjpg" Width="140" DisplayMemberBinding="{Binding kepjpg}"/>
+                            <GridViewColumn Header="eng" Width="38" DisplayMemberBinding="{Binding eng}"/>
+                            <GridViewColumn Header="van" Width="38" DisplayMemberBinding="{Binding van}"/>
+                            <GridViewColumn Header="torol" Width="38" DisplayMemberBinding="{Binding torol}"/>
+                            <GridViewColumn Header="idobelyeg" Width="125" DisplayMemberBinding="{Binding idobelyeg}"/>
+                            <GridViewColumn Header="tabid" Width="77" DisplayMemberBinding="{Binding tabid}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <Button x:Name="hozzaad_diak" Content="Új" Canvas.Left="945" Canvas.Top="370" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="29" Click="megnyitashoz_diak"/>
+                <Button x:Name="torol_diak" Content="Törlés" Canvas.Left="940" Canvas.Top="420" ToolTip="Többet is törölhetsz (Ctrl + Katt)" Height="29" Width="50" Click="torles_diak" HorizontalAlignment="Left" VerticalAlignment="Top" IsEnabled="False"/>
+                <Button x:Name="mod_diak" Content="Módosítás" Canvas.Left="910" Canvas.Top="470" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" IsEnabled="False" Width="80" Click="modosit_diak"/>
+                <Button x:Name="megszuntet_d" Content="Megszüntet" ToolTip="Kijelölés megszüntetése" Canvas.Left="910" Canvas.Top="520" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80" Height="29" Click="kijlevesz_d" IsEnabled="False"/>
+                <GroupBox x:Name="ujdiak" Height="170" Header="" Width="270" Canvas.Top="360" Canvas.Left="10" HorizontalAlignment="Left" VerticalAlignment="Center" Visibility="Collapsed">
+                    <Canvas>
+                        <Label Content="Vezetéknév: " Canvas.Left="10" ToolTip="Legfeljebb 50 karakter" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBox x:Name="hozzavnev" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="14" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        <Label Content="Keresztnév: " Canvas.Left="10" ToolTip="Legfeljebb 50 karakter" Canvas.Top="41" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBox x:Name="hozzaknev" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="45" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <Label Content="Tabloazonosító: " Canvas.Left="10" ToolTip="Léteznie kell" Canvas.Top="72" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBox x:Name="hozzatabid" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="76" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" PreviewTextInput="justnumber"/>
+                        
+                        <Button x:Name="hozzament_diak" Content="Hozzáad" Canvas.Left="118" Canvas.Top="105" HorizontalAlignment="Left" VerticalAlignment="Center" Click="diakment"/>
+                        <Button x:Name="megsemadokhozza_diak" Content="Mégsem" Canvas.Left="178" Canvas.Top="105" HorizontalAlignment="Left" VerticalAlignment="Center" Click="megsemadokhozzagomb_diak"/>
+                    </Canvas>
+                </GroupBox>
+                <GroupBox x:Name="diak_mod" Height="240" Header="" Width="270" Canvas.Top="360" Canvas.Left="292" Visibility="Collapsed" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Canvas>
+                        <Label Content="Van: " Canvas.Left="10" Canvas.Top="14" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <GroupBox Height="43" Header="" Width="120" Canvas.Left="108" HorizontalAlignment="Center" VerticalAlignment="Top">
+                            <Canvas>
+                                <RadioButton x:Name="vantrue_diak" Content="True" Canvas.Left="5" Canvas.Top="3" />
+                                <RadioButton x:Name="vanfalse_diak" Content="False" Canvas.Left="55" Canvas.Top="3" />
+                            </Canvas>
+                        </GroupBox>
+                        <Label Content="Engedély: " Canvas.Left="10" Canvas.Top="49" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <GroupBox Height="43" Header="" Width="120" Canvas.Left="108" Canvas.Top="35" HorizontalAlignment="Center" VerticalAlignment="Top">
+                            <Canvas>
+                                <RadioButton x:Name="engtrue_diak" Content="True" Canvas.Left="5" Canvas.Top="3" />
+                                <RadioButton x:Name="engfalse_diak" Content="False" Canvas.Left="55" Canvas.Top="3" />
+                            </Canvas>
+                        </GroupBox>
+                        <Label Content="Vezetéknév: " Canvas.Left="10" Canvas.Top="81" ToolTip="Legfeljebb 50 karakter" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBox x:Name="modvnev" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="85" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Label Content="Keresztnév: " Canvas.Left="10" Canvas.Top="111" ToolTip="Legfeljebb 50 karakter" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBox x:Name="modknev" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="115" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <Label Content="Tabid: " Canvas.Left="10" Canvas.Top="141" ToolTip="Léteznie kell" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <TextBox x:Name="modtabid" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="145" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top" PreviewTextInput="justnumber"/>
+                                                                        
+                        <Button x:Name="adatmod_diak" Content="Mentés" Canvas.Left="125" Canvas.Top="182" HorizontalAlignment="Left" VerticalAlignment="Center" Click="adatokmodositasa_diak"/>
+                        <Button x:Name="megsemmod_diak" Content="Mégsem" Canvas.Left="178" Canvas.Top="182" HorizontalAlignment="Left" VerticalAlignment="Center" Click="nemakarokmodositani_diak"/>
+                    </Canvas>
+                </GroupBox>
+                <Button x:Name="diakvissza" Content="Vissza" Canvas.Left="940" Canvas.Top="571" Click="divissza" Height="29" Width="50"/>
+            </Canvas>
+        </GroupBox>
+        <GroupBox x:Name="tanaradmin" Header="" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" Width="760" Height="440" Background="White">
+            <Canvas>
+                <ListView x:Name="tanarok" Height="400" Width="425" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="10" SelectionChanged="tanarok_SelectionChanged">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="id" Width="40" DisplayMemberBinding="{Binding id}"/>
+                            <GridViewColumn Header="vnev" Width="77" DisplayMemberBinding="{Binding vnev}"/>
+                            <GridViewColumn Header="knev" Width="77" DisplayMemberBinding="{Binding knev}"/>
+                            <GridViewColumn Header="eng" Width="38" DisplayMemberBinding="{Binding eng}"/>
+                            <GridViewColumn Header="torol" Width="38" DisplayMemberBinding="{Binding torol}"/>
+                            <GridViewColumn Header="idobelyeg" Width="125" DisplayMemberBinding="{Binding idobelyeg}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <Button x:Name="hozzaad_tanar" Content="Új" Canvas.Left="470" Canvas.Top="381" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="29" Click="megnyitashoz_tanar"/>
+                <Button x:Name="torol_tanar" Content="Törlés" Canvas.Left="530" Canvas.Top="381" ToolTip="Többet is törölhetsz (Ctrl + Katt)" Height="29" Width="50" Click="torles_tanar" HorizontalAlignment="Left" VerticalAlignment="Top" IsEnabled="False"/>
+                <Button x:Name="mod_tanar" Content="Módosítás" Canvas.Left="595" Canvas.Top="381" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" IsEnabled="False" Width="80" Click="modosit_tanar"/>
+                <Button x:Name="tanarid" Content="Tanarid" Canvas.Left="470" Canvas.Top="10" Height="29" Width="50" Click="tanaridtarolas" HorizontalAlignment="Left" VerticalAlignment="Top" IsEnabled="False"/>
+                <Button x:Name="megszuntet_ta" Content="Megszüntet" ToolTip="Kijelölés megszüntetése" Canvas.Left="530" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80" Height="29" Click="kijlevesz_ta" IsEnabled="False"/>
+                <GroupBox x:Name="ujtanar" Height="140" Header="" Width="270" Canvas.Top="39" Canvas.Left="470" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Collapsed">
+                    <Canvas>
+                        <Label Content="Vezetéknév: " Canvas.Left="10" ToolTip="Legfeljebb 50 karakter" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBox x:Name="hozzavnev_tanar" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="14" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                        <Label Content="Keresztnév: " Canvas.Left="10" ToolTip="Legfeljebb 50 karakter" Canvas.Top="41" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBox x:Name="hozzaknev_tanar" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="45" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        
+                        <Button x:Name="hozzament_tanar" Content="Hozzáad" Canvas.Left="118" Canvas.Top="75" HorizontalAlignment="Left" VerticalAlignment="Center" Click="tanarment"/>
+                        <Button x:Name="megsemadokhozza_tanar" Content="Mégsem" Canvas.Left="178" Canvas.Top="75" HorizontalAlignment="Left" VerticalAlignment="Center" Click="megsemadokhozzagomb_tanar"/>
+                    </Canvas>
+                </GroupBox>
+                <GroupBox x:Name="tanar_mod" Height="180" Header="" Width="270" Canvas.Top="179" Canvas.Left="470" Visibility="Collapsed" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Canvas>
+                        <Label Content="Engedély: " Canvas.Left="11" Canvas.Top="19" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <GroupBox Height="43" Header="" Width="120" Canvas.Left="108" Canvas.Top="5" HorizontalAlignment="Center" VerticalAlignment="Top">
+                            <Canvas>
+                                <RadioButton x:Name="engtrue_tanar" Content="True" Canvas.Left="5" Canvas.Top="3" />
+                                <RadioButton x:Name="engfalse_tanar" Content="False" Canvas.Left="55" Canvas.Top="3" />
+                            </Canvas>
+                        </GroupBox>
+                        <Label Content="Vezetéknév: " Canvas.Left="11" Canvas.Top="54" ToolTip="Legfeljebb 50 karakter" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBox x:Name="modvnev_tanar" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="58" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <Label Content="Keresztnév: " Canvas.Left="10" Canvas.Top="85" ToolTip="Legfeljebb 50 karakter" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBox x:Name="modknev_tanar" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="89" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+                        <Button x:Name="adatmod_tanar" Content="Mentés" Canvas.Left="125" Canvas.Top="122" HorizontalAlignment="Left" VerticalAlignment="Center" Click="adatokmodositasa_tanar"/>
+                        <Button x:Name="megsemmod_tanar" Content="Mégsem" Canvas.Left="178" Canvas.Top="122" HorizontalAlignment="Left" VerticalAlignment="Center" Click="nemakarokmodositani_tanar"/>
+                    </Canvas>
+                </GroupBox>
+                <Button x:Name="tanarvissza" Content="Vissza" Canvas.Left="690" Canvas.Top="381" Click="tavissza" Height="29" Width="50"/>
+            </Canvas>
+        </GroupBox>
+        <GroupBox x:Name="tanarkepadmin" Header="" Visibility="Collapsed" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1060" Height="630" Background="White">
+            <Canvas>
+                <ListView x:Name="tanarkepek" Height="340" Width="1025" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="10" SelectionChanged="tanarkepek_SelectionChanged">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="id" Width="40" DisplayMemberBinding="{Binding id}"/>
+                            <GridViewColumn Header="beosztas" Width="150" DisplayMemberBinding="{Binding beosztas}"/>
+                            <GridViewColumn Header="mappa" Width="170" DisplayMemberBinding="{Binding mappa}"/>
+                            <GridViewColumn Header="keppng" Width="140" DisplayMemberBinding="{Binding keppng}"/>
+                            <GridViewColumn Header="kepjpg" Width="140" DisplayMemberBinding="{Binding kepjpg}"/>
+                            <GridViewColumn Header="eng" Width="38" DisplayMemberBinding="{Binding eng}"/>
+                            <GridViewColumn Header="van" Width="38" DisplayMemberBinding="{Binding van}"/>
+                            <GridViewColumn Header="torol" Width="38" DisplayMemberBinding="{Binding torol}"/>
+                            <GridViewColumn Header="idobelyeg" Width="125" DisplayMemberBinding="{Binding idobelyeg}"/>
+                            <GridViewColumn Header="tanarid" Width="40" DisplayMemberBinding="{Binding tanarid}"/>
+                            <GridViewColumn Header="tabid" Width="77" DisplayMemberBinding="{Binding tabid}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <Button x:Name="hozzaad_tanarkep" Content="Új" Canvas.Left="990" Canvas.Top="370" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Height="29" Click="megnyitashoz_tanarkep"/>
+                <Button x:Name="torol_tanarkep" Content="Törlés" Canvas.Left="986" Canvas.Top="420" ToolTip="Többet is törölhetsz (Ctrl + Katt)" Height="29" Width="49" Click="torles_tanarkep" HorizontalAlignment="Left" VerticalAlignment="Top" IsEnabled="False"/>
+                <Button x:Name="mod_tanarkep" Content="Módosítás" Canvas.Left="958" Canvas.Top="470" HorizontalAlignment="Left" Height="29" VerticalAlignment="Top" IsEnabled="False" Width="77" Click="modosit_tanarkep"/>
+                <Button x:Name="megszuntet_tk" Content="Megszüntet" ToolTip="Kijelölés megszüntetése" Canvas.Left="955" Canvas.Top="520" HorizontalAlignment="Left" VerticalAlignment="Center" Width="80" Height="29" Click="kijlevesz_tk" IsEnabled="False"/>
+                <GroupBox x:Name="ujtanarkep" Height="170" Header="" Width="270" Canvas.Top="360" Canvas.Left="10" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Collapsed">
+                    <Canvas>
+                        <Label Content="Tanarid: " Canvas.Left="10" ToolTip="Léteznie kell" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBox x:Name="hozzatanarid_kep" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="14" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center" PreviewTextInput="justnumber"/>
+                        <Label Content="Tabid: " Canvas.Left="10" ToolTip="Léteznie kell" Canvas.Top="41" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBox x:Name="hozzatabid_kep" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="45" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" PreviewTextInput="justnumber"/>
+                        <Label Content="Beosztás: " Canvas.Left="10" ToolTip="Válassz ki egy lehetőséget" Canvas.Top="72" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <ComboBox x:Name="hozzabeosztas_kep" Canvas.Left="108" Canvas.Top="74" Width="120"/>
+                                                
+                        <Button x:Name="hozzament_tanarkep" Content="Hozzáad" Canvas.Left="118" Canvas.Top="105" HorizontalAlignment="Left" VerticalAlignment="Center" Click="tanarkepment"/>
+                        <Button x:Name="megsemadokhozza_tanarkep" Content="Mégsem" Canvas.Left="178" Canvas.Top="105" HorizontalAlignment="Left" VerticalAlignment="Center" Click="megsemadokhozzagomb_tanarkep"/>
+                    </Canvas>
+                </GroupBox>
+                <GroupBox x:Name="tanarkep_mod" Height="240" Header="" Width="270" Canvas.Top="360" Canvas.Left="290" Visibility="Collapsed" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Canvas>
+                        <Label Content="Van: " Canvas.Left="10" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <GroupBox Height="43" Header="" Width="120" Canvas.Left="108" Canvas.Top="-4" HorizontalAlignment="Center" VerticalAlignment="Top">
+                            <Canvas>
+                                <RadioButton x:Name="vantrue_tanarkep" Content="True" Canvas.Left="5" Canvas.Top="3" />
+                                <RadioButton x:Name="vanfalse_tanarkep" Content="False" Canvas.Left="55" Canvas.Top="3" />
+                            </Canvas>
+                        </GroupBox>
+                        <Label Content="Engedély: " Canvas.Left="10" Canvas.Top="45" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                        <GroupBox Height="43" Header="" Width="120" Canvas.Left="108" Canvas.Top="32" HorizontalAlignment="Center" VerticalAlignment="Top">
+                            <Canvas>
+                                <RadioButton x:Name="engtrue_tanarkep" Content="True" Canvas.Left="5" Canvas.Top="3" />
+                                <RadioButton x:Name="engfalse_tanarkep" Content="False" Canvas.Left="55" Canvas.Top="3" />
+                            </Canvas>
+                        </GroupBox>
+                        <Label Content="Tanarid: " Canvas.Left="10" ToolTip="Léteznie kell" Canvas.Top="81" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBox x:Name="modtanarid_kep" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="85" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center" PreviewTextInput="justnumber"/>
+                        <Label Content="Tabid: " Canvas.Left="10" ToolTip="Léteznie kell" Canvas.Top="111" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <TextBox x:Name="modtabid_kep" Canvas.Left="108" TextWrapping="NoWrap" Canvas.Top="115" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top" PreviewTextInput="justnumber"/>
+                        <Label Content="Beosztás: " Canvas.Left="10" ToolTip="Válassz ki egy lehetőséget" Canvas.Top="141" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                        <ComboBox x:Name="modbeosztas_kep" Canvas.Left="108" Canvas.Top="143" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+                        <Button x:Name="adatmod_tanarkep" Content="Mentés" Canvas.Left="125" Canvas.Top="182" HorizontalAlignment="Left" VerticalAlignment="Center" Click="adatokmodositasa_tanarkep"/>
+                        <Button x:Name="megsemmod_tanarkep" Content="Mégsem" Canvas.Left="178" Canvas.Top="182" HorizontalAlignment="Left" VerticalAlignment="Center" Click="nemakarokmodositani_tanarkep"/>
+                    </Canvas>
+                </GroupBox>
+                <Button x:Name="tanarkepvissza" Content="Vissza" Canvas.Left="985" Canvas.Top="570" Click="takepvissza" Height="29" Width="50"/>
+            </Canvas>
+        </GroupBox>
+        <GroupBox x:Name="osztaly" Header="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="350" Width="250" Visibility="Collapsed" Background="white">
+            <Canvas>
+                <ListView x:Name="osztalytipusok" Height="268" Width="218" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="10">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Szám" Width="40" DisplayMemberBinding="{Binding szam}"/>
+                            <GridViewColumn Header="Jelentés" Width="150" DisplayMemberBinding="{Binding jelentes}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <Button x:Name="osztalyvissza" Content="Vissza" Canvas.Left="94" Canvas.Top="288" Click="ovissza" Height="29" Width="50"/>
+            </Canvas>
+        </GroupBox>
+        <GroupBox x:Name="hely" Header="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="350" Width="250" Visibility="Collapsed" Background="white">
+            <Canvas>
+                <ListView x:Name="helytipusok" Height="268" Width="218" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Left="10">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Szám" Width="40" DisplayMemberBinding="{Binding szam}"/>
+                            <GridViewColumn Header="Jelentés" Width="150" DisplayMemberBinding="{Binding jelentes}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <Button x:Name="helyvissza" Content="Vissza" Canvas.Left="94" Canvas.Top="288" Click="hvissza" Height="29" Width="50"/>
+            </Canvas>
+        </GroupBox>
+    </Grid>
+</Window>
