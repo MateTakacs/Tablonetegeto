@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nezegeto.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/nezegeto.js"></script>
+
+
+    <title>Tablónézegető</title>
+</head>
+<body>
+    <section id="monitor">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" id="beviteliresz">
+                   <span>Keresés típusa: <select name="Típus" id="tipus" onchange="valaszt(this)">
+                        <option value="diak">Diák</option>
+                        <option value="tablo">Tabló</option>
+                        <option value="tanar">Tanár</option>
+                      </select></span>
+                    <span id="snev">Név: <input type="text" id="nev"></span>
+                    <span id="sevszam">Évszám: <input type="text" id="evszam"></span>
+                    <span id="sosztaly">Osztály: <input type="text" id="osztaly"></span>
+                    <span id="sbutton"><button onclick="kuldes()" id="kereses">Keresés</button></span>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="tablazat">
+                        <table id="lekerdtablazat">
+                            <thead id="adatfejkimenet">
+                                <!-- ide kerülnek majd az adatok -->
+                            </thead>
+                            <tbody id="adatkimenet">
+                              <!-- ide kerülnek majd az adatok -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closemodal()">&times;</span>
+            <img class="modal-content" id="modal-img">
+        </div>
+    </section>
+</body>
+</html>

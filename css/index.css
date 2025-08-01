@@ -1,0 +1,418 @@
+body{
+    overflow-x: hidden;
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Alkatra', cursive;
+}
+section{
+    height: 100vh;
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.25;
+}
+#logoanimated{
+    margin-top: 100px;
+    text-align: center;
+}
+#logoanimated p{
+   text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #bcd3f2 0%,
+        #bcd3f2 29%,
+        #fcaa67 67%,
+        #fcaa67 100%
+    );
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 100px;
+}
+.container{
+    text-align: center;
+}
+#elsoresz{
+    padding-bottom: 40px;
+}
+#kepforgat1{
+    border: 5px solid  #fcaa67;
+    opacity: 0.7; 
+    border-radius: 20px;
+    transition: 1s;
+    box-shadow: 0 0 2em 0em #fcaa67;
+}
+#kepforgat2{
+    border: 5px solid  #fcaa67;
+    rotate: 40deg;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 0 0 2em 0em #fcaa67;
+}
+#kepforgat3{
+    border: 5px solid  #fcaa67;
+    rotate: 30deg;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 0 0 2em 0em #fcaa67;
+}
+#kepforgat4{
+    border: 5px solid  #fcaa67;
+    rotate: -55deg;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 0 0 2em 0em #fcaa67;
+}
+#kepforgat5{
+    border: 5px solid  #fcaa67;
+    z-index: 10000;
+    rotate: 20deg;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 0 0 2em 0em #fcaa67;
+}
+#kepforgat6{
+    border: 5px solid  #fcaa67;
+    rotate: -20deg;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 0 0 2em 0em #fcaa67;
+}
+#kepforgat7{
+    border: 5px solid  #fcaa67;
+    rotate: 30deg;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 0 0 2em 0em #fcaa67;
+}
+#kepforgat8{
+    border: 5px solid  #fcaa67;
+    rotate: -40deg;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 0 0 2em 0em #fcaa67;
+}
+#kepforgat9{
+    border: 5px solid  #fcaa67;
+    z-index: 1;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 0 0 2em 0em #fcaa67;
+}
+#kepforgat10{
+    border: 5px solid  #fcaa67;
+    rotate: 5deg;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 0 0 2em 0em #fcaa67;
+}
+#kepforgat11{
+    border: 5px solid  #fcaa67;
+    rotate: -15deg;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 0 0 2em 0em #fcaa67;
+}
+#kepforgat12{
+    border: 5px solid  #fcaa67;
+    rotate: 10deg;
+    transition: 1s;
+    border-radius: 20px;
+    box-shadow: 0 0 2em 0em #fcaa67;
+}
+#masodikresz{
+    padding-top: 50px;
+    background-color: #fcaa67;
+    color: black;
+}
+#dobozok{
+    margin: 50px 100px ;
+}
+#dobozok div{
+    align-items: center;
+
+}
+
+#doboz{
+    margin: 10px;
+    border: 1px solid #3f3327;
+    border-radius: 30px;
+    box-shadow: 2px 10px black;
+    padding: 10px;
+    background-color: #3f3327;
+    color: #80a4ed;
+    transition: 1s;
+}
+#doboz p{
+    font-size: 15px;
+}
+#doboz:hover{
+    transform: translateY(-0.25em);
+    box-shadow: 0 0 5em 0em rgb(29,28,28);
+    background-color: rgb(29, 28, 28);
+    border-color: #3f3327;
+    color: #80a4ed;
+}
+#cardresz{
+    margin: 40px;
+}
+#cardgomb{
+    background-color: #fcaa67;
+}
+.reveal{
+    position: relative;
+    transform: translateY(250px);
+    opacity: 0;
+    transition: 1.5s all ease;
+  }
+#nav{
+    background-color: #3f3327;
+}
+#nav a{
+    color: #FCAA67 ;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+#tesztkep1{
+    display: none;
+}
+#fade{
+    animation: fadeIn 3s;
+}
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* 480px: Mobile devices. */
+@media only screen and (max-width: 480px){
+    body{
+        overflow-x: hidden;
+    }
+    #logoanimated p{
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    #kepforgat1{
+        display: none;
+    }
+    #kepforgat2{
+        display: none;
+    }
+    #kepforgat3{
+        display: none;
+    }
+    #kepforgat4{
+        display: none;
+    }
+    #kepforgat7{
+        display: none;
+    }
+    #kepforgat8{
+        display: none;
+    }
+    #kepforgat9{
+        display: none;
+    }
+    #kepforgat10{
+        display: none;
+    }
+    #kepforgat11{
+        display: none;
+    }
+    #kepforgat12{
+        display: none;
+    }
+    .reveal{
+        position: relative;
+        transform: translateY(250px);
+        opacity: 0;
+        transition: 1.5s all ease;
+    }
+      .reveal.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    #masodikresz{
+        padding-top: 15px;
+        background-color: #fcaa67;
+        color: black;
+    }
+    #doboz{
+        font-size: 7px;
+        margin: 8px;
+    }
+    #doboz h3{
+        font-size: 12px;
+    }
+}
+/**
+*   481px — 578px: iPads, Tablets.
+*   Másodikrész doboz betüméretek optimalizálása és feltöltése.
+*/
+@media only screen and (min-width: 481px) and (max-width: 578px){
+    body{
+        overflow-x: hidden;
+    }
+    #logoanimated p{
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+    #kepforgat1{
+        display: none;
+    }
+    #kepforgat2{
+        display: none;
+    }
+    #kepforgat3{
+        display: none;
+    }
+    #kepforgat4{
+        display: none;
+    }
+    #kepforgat8{
+        display: none;
+    }
+    #kepforgat9{
+        display: none;
+    }
+    #kepforgat10{
+        display: none;
+    }
+    #kepforgat11{
+        display: none;
+    }
+    #kepforgat12{
+        display: none;
+    }
+    #masodikresz{
+        padding-top: 10px;
+        background-color: #fcaa67;
+        color: black;
+    }
+    #doboz{
+        margin: 6px;
+    }
+    
+}
+/* 578px — 768px: iPads, Tablets. */
+@media only screen and (min-width: 578px) and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    #logoanimated p{
+        font-size: 70px;
+        margin-bottom: 40px;
+    }
+    .reveal{
+        position: relative;
+        transform: translateY(250px);
+        opacity: 0;
+        transition: 1.5s all ease;
+    }
+      .reveal.active{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    #elsoresz{
+        padding-bottom: 20px;
+    }
+    #masodikresz{
+        padding-top: 50px;
+        background-color: #fcaa67;
+        color: black;
+    }
+    #doboz{
+        font-size: 7px;
+        margin: 10px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    #masodikresz{
+        padding-top: 60px;
+    }
+    #doboz h3{
+        font-size: 15px;
+    }
+}
+/* 769px — 1024px: Small screens, laptops. */
+@media only screen and (min-width: 769px) and(max-width: 1024px){
+    body{
+        overflow-x: hidden;
+    }
+    #logoanimated p{
+        font-size: 110px;
+        margin-bottom: 40px;
+    }
+    #elsoresz{
+        padding-bottom: 20px;
+    }
+    .reveal{
+        position: relative;
+        transform: translateY(250px);
+        opacity: 0;
+        transition: 1.5s all ease;
+    }
+      .reveal.active{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    #masodikresz{
+        padding-top: 2px;
+    }
+
+    #doboz h3{
+        font-size: 15px;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+/* 1025px — 1200px: Desktops, large screens. */
+@media only screen and (min-width: 1025px) and (max-height: 700px){
+    #kepforgat9{
+        display: none;
+    }
+    #kepforgat10{
+        display: none;
+    }
+    #kepforgat11{
+        display: none;
+    }
+    #kepforgat12{
+        display: none;
+    }
+    #doboz h3{
+        font-size: 10px;
+    }
+    #doboz{
+        font-size: 15px;
+        margin: 10px;
+    }
+    h1{
+        font-size: 30px;
+    }
+}   

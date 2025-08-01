@@ -1,0 +1,125 @@
+html{
+    background-color: #3f3327;
+}
+body{
+    font-family: 'Alkatra', cursive;
+}
+#monitor{
+    background-color: #3f3327;
+}
+.container{
+    height: 100%;
+    background-color: #fcaa67;
+    border-radius: 55px;
+}
+table{
+    overflow-x:auto;
+    margin: auto;
+    background-color: #80a4ed;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 25px;
+}
+#lekerdtablazat{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+#lekerdtablazat tr:hover {
+    background-color: #ddd;
+    border-radius: 25px;
+}
+#lekerdtablazat th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #0b3954;
+    color: #fffd77;
+  }
+#lekerdkepek{
+    width: 230px;
+    height: auto;
+}
+#beviteliresz{
+    font-size: 25px;
+    padding: 20px;
+    margin: 0;
+    float: left;
+    text-align: center;
+}
+#beviteliresz input{
+    width: 150px;
+}
+#nev{
+    border-radius: 25px;
+    border-color: #e5ffde;
+    background-color: #0b3954;
+    color: #FFFD77;
+}
+#evszam{
+    border-radius: 25px;
+    border-color: #e5ffde;
+    background-color: #0b3954;
+    color: #FFFD77;
+}
+#osztaly{
+    border-radius: 25px;
+    border-color: #e5ffde;
+    background-color: #0b3954;
+    color: #FFFD77;
+}
+#tipius{
+    border-radius: 25px;
+    border-color: #e5ffde;
+    background-color: #0b3954;
+    color: #FFFD77;
+}
+#kereses{
+    border-radius: 25px;
+    border-color: #e5ffde;
+    background-color: #0b3954;
+    color: #FFFD77;
+}
+#nincs{
+    background-position: center;
+}
+#modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  #modal-content {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 1200px;
+    max-height: 80%;
+    position: relative;
+  }
+  
+  #modal-content img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
